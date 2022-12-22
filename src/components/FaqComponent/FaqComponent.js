@@ -1,20 +1,21 @@
 import React, {Fragment, useState} from 'react'
 
-const FaqComponent = () => {
+const FaqComponent = ({faqtitle, faqcontent}) => {
 
   const [open, setopen] = useState(false);
 
   return (
     <Fragment>
-  <div className='py-10 w-100 md:w-[100%] lg:w-[50%]'>
-   <div className='flex items-center justify-between border-2 border-b-0 border-r-0 border-l-0 border-solid border-t-slate-400  py-10 cursor-pointer'>
-   <div className='text-2xl font-bold px-2'>How is your web design agency different from the competitors?</div>
-    <div className='text-3xl font-bold'>+</div>
+  <div className=' w-100 md:w-[100%] lg:w-[80%]  text-black faq'>
+   <div className='flex items-center justify-between border-2 border-b-0 border-r-0 border-l-0 border-solid border-t-slate-300  py-10 cursor-pointer'
+   onClick={()=>{
+    setopen(!open)
+   }}>
+   <div className=  "text-2xl font-bold px-2 show-content">{faqtitle}</div>
+    <div className='text-3xl faq_icon font-bold'>{open ? '-' : '+'}</div>
    </div>
-    <div className='text-2xl faq-content leading-10'>
-    Our team is intentionally small and slim. For more than ten years, we have worked with tech companies with unique technology leverage.
-
-In addition to designing and developing websites, we act as a UI/UX design company, branding agency, app designers, web app development agency, and design systems studio. It allows us to provide much more valuable and complete results.
+      <div className='text-2xl faq-content leading-10  text-black'>
+    {open && <div className="accordion-content">{faqcontent}</div>}
     </div>
   </div>
     </Fragment>

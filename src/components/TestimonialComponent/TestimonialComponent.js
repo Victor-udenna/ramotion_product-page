@@ -4,7 +4,7 @@ import React, {Fragment} from 'react';
   return (
    <Fragment>
      <div className='my-10'>
-      <div className='font-semibold text-xl  md:font-bold lg:text-2xl lg:leading-10 w-100 lg:w-[60%] py-5'> "{testimonial}"</div>
+      <div className='font-semibold text-xl  md:font-bold lg:text-2xl lg:leading-10 w-100 lg:w-[80%] py-5'> "{testimonial}"</div>
     <div className='flex'>
 
     <div>
@@ -15,7 +15,7 @@ import React, {Fragment} from 'react';
         <div className='text-black text-lg'>{username}</div>
        <div className='flex items-center'>
        <div className='text-grey text-slate-400 text-lg'>{userrole}</div>
-        <div className=' underline text-slate-400 px-1 hover:text-blue-400'>{link}</div>
+        <div className=' underline text-slate-400 px-1 hover:text-blue-400 cursor-pointer'>{link}</div>
        </div>
       </div>
     </div>
