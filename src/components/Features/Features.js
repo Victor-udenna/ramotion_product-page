@@ -20,31 +20,31 @@ import Brands from '../Brands/Brands';
 <div className=' py-5 lg:py-7  md:flex justify-between items-center'>
   <div className='leading-10'>
     <div className='text-2xl  font-bold py-3'>User experience</div>
-    <div>Discovery</div>
-    <div>UI/UX audit</div>
+    <div>- Discovery</div>
+    <div>- UI/UX audit</div>
     <div>Information architecture</div>
-    <div>Copy and CTAs</div>
-    <div>Layout prototypes</div>
+    <div>- Copy and CTAs</div>
+    <div>- Layout prototypes</div>
   </div>
 
 <div className='leading-10'>
 <div className='text-2xl  font-bold py-3'>Design & front-end</div>
-<div>Visual design & interactions</div>
-<div>Front-end development</div>
-<div>CMS</div>
-<div>Iconography & illustrations</div>
-<div>3rd party integrations</div>
+<div>- Visual design & interactions</div>
+<div>- Front-end development</div>
+<div>- CMS</div>
+<div>- Iconography & illustrations</div>
+<div>- 3rd party integrations</div>
 </div>
 
 <div className='leading-10'>
 <div className='text-2xl 
 
  font-bold py-3'>Technology stack</div>
-<div>ReactJS</div>
-<div>Gatsby</div>
-<div>Webflow</div>
-<div>Contentful</div>
-DatoCMS
+<div>- ReactJS</div>
+<div>- Gatsby</div>
+<div>- Webflow</div>
+<div>- Contentful</div>
+<div>- DatoCMS</div>
 </div>
 
 

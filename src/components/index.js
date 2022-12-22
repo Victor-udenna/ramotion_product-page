@@ -4,4 +4,7 @@ export {default as Card} from "./Card/Card";
 export {default as VideoCard} from  "./VideoCard/VideoCard";
 export {default as Features} from "./Features/Features";
 export {default as Brands} from  "./Brands/Brands";
-export {default as BrandImg} from "./BrandImg/BrandImg";
+export {default as Testimonial} from "./Testimonial/Testimonial";
+export {default as TestimonialComponent} from "./TestimonialComponent/TestimonialComponent";
+export {default as Faq} from "./Faq/Faq";
+export {default as FaqComponent} from "./FaqComponent/FaqComponent";

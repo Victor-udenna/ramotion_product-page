@@ -3,6 +3,8 @@ import { NavBar } from '../../components';
 import { Banner } from '../../components';
 import { Card } from "../../components";
 import { Features } from '../../components';
+import { Testimonial } from "../../components";
+import { Faq } from "../../components";
  const HomePage = () => {
   return (
    <Fragment>
@@ -12,6 +14,8 @@ import { Features } from '../../components';
      <Banner/>
      <Card/>
      <Features/>
+     <Testimonial/>
+     <Faq/>
    </div>
    </Fragment>
   )
