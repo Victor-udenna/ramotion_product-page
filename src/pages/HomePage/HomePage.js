@@ -5,6 +5,7 @@ import { Card } from "../../components";
 import { Features } from '../../components';
 import { Testimonial } from "../../components";
 import { Faq } from "../../components";
+import { Aside } from "../../components";
  const HomePage = () => {
   return (
    <Fragment>
@@ -16,6 +17,7 @@ import { Faq } from "../../components";
      <Features/>
      <Testimonial/>
      <Faq/>
+     <Aside/>
    </div>
    </Fragment>
   )

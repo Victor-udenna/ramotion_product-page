@@ -8,3 +8,4 @@ export {default as Testimonial} from "./Testimonial/Testimonial";
 export {default as TestimonialComponent} from "./TestimonialComponent/TestimonialComponent";
 export {default as Faq} from "./Faq/Faq";
 export {default as FaqComponent} from "./FaqComponent/FaqComponent";
+export {default as Aside} from "./Aside/Aside";
