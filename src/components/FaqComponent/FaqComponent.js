@@ -11,10 +11,10 @@ const FaqComponent = ({faqtitle, faqcontent}) => {
    onClick={()=>{
     setopen(!open)
    }}>
-   <div className=  "text-2xl font-bold px-2 show-content">{faqtitle}</div>
+   <div className=  "text-xl md:text-2xl font-bold px-2 show-content">{faqtitle}</div>
     <div className='text-3xl faq_icon font-bold'>{open ? '-' : '+'}</div>
    </div>
-      <div className='text-2xl faq-content leading-10  text-black'>
+      <div className='text-xl lg:text-2xl faq-content leading-10  text-black'>
     {open && <div className="accordion-content">{faqcontent}</div>}
     </div>
   </div>
