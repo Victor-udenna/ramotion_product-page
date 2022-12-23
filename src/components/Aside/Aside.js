@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
 
- const Aside = () => {
+const Aside = () => {
+  const [color, setcolor] = useState(false);
   return (
-    <div className='border-t-2 border-gray-300 border-solid py-10'>
-      <div className='font-bold text-lg md:text-xl pb-5 leading-7'>Shall We Chat</div>
-   <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
-   <div className='leading-tight'>Let's talk about your</div>
-   <div className='leading-tight'>product</div>
-   </div>
+    <div
+      onMouseEnter={() => {
+        setcolor(!color);
+      }}
+      onMouseLeave={() => {
+        setcolor(!color);
+      }}
+    >
+  
+      <div className={`  py-10 showcolor ${color ? "active" : "inactive"}`}>
+        <div className="aside_header font-extrabold text-xl md:text-2xl pb-5">Shall We Chat?</div>
+        <div className=" aside_text text-3xl md:text-4xl lg:text-6xl font-bold">
+          <div className="leading-tight">Let's talk about your</div>
+          <div className="leading-tight">product</div>
+        </div>
+      </div>
     </div>
-  )
-}
- 
+  );
+};
+
 export default Aside;

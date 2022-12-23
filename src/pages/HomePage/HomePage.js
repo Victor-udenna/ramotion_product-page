@@ -6,6 +6,7 @@ import { Features } from '../../components';
 import { Testimonial } from "../../components";
 import { Faq } from "../../components";
 import { Aside } from "../../components";
+import { Footer } from "../../components";
  const HomePage = () => {
   return (
    <Fragment>
@@ -18,6 +19,7 @@ import { Aside } from "../../components";
      <Testimonial/>
      <Faq/>
      <Aside/>
+     <Footer/>
    </div>
    </Fragment>
   )
