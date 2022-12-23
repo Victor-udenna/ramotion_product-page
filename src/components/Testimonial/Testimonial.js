@@ -8,8 +8,9 @@ import userimg4 from "../../assets/images/ratic.jpg";
 export const Testimonial = () => {
   return (
   <Fragment>
-  <div className='font-bold text-6xl text-white px-10'>Testimonial</div>
- <div className=' px-10'>
+<div className='px-10 lg:px-20 xl:px-32'>
+<div className=' font-bold text-6xl text-white'>Testimonial</div>
+ <div className=''>
  <TestimonialComponent
  testimonial={"Ramotion was fast and efficient without sacrificing quality. Their team of designers and developers brought our vision to life and we are thankful for their expertise."}
  userimg={userimg1}
@@ -38,6 +39,7 @@ export const Testimonial = () => {
  userrole={"Co-founder at Elph"}
  link={"(Acquired by Brex)"}/>
  </div>
+</div>
   </Fragment>
   )
 }

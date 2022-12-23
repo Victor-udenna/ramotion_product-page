@@ -9,7 +9,7 @@ const NavBar = () => {
   const [scroll, setScroll] = useState(false);
   return (
     <Fragment>
-      <div className="bg-primaryBg grid grid-cols-2 px-20 py-8 sticky top-0">
+      <div className="bg-primaryBg grid grid-cols-2 px-10 lg:px-20 xl:px-32 py-8 sticky top-0">
         <div>
           <svg height="24" width="15" fill="white">
             <path

@@ -41,7 +41,7 @@ const Card = () => {
        })}
        </div> */}
 
-       <div className='bg-primaryBg grid gird-cols-12 md:grid-cols-3'>
+       <div className='bg-primaryBg px-10 lg:px-20 xl:px-32 grid gird-cols-12 md:grid-cols-3'>
         <VideoCard
         cardImage={image1}
         cardVideo={video1}

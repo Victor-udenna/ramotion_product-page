@@ -4,9 +4,8 @@ import React, {Fragment} from 'react';
  const Footer = () => {
   return (
     <Fragment>
-        <div>
+        <div className='px-10 lg:px-20 xl:px-32'>
           <div className='py-10  text-[#818181] grid grid-cols-2 md:grid-cols-4 lg:py-20'>
-
             <div>
               <div className='text-2xl font-bold'>Locations</div>
               <div className=' md:text-xl hover:text-blue-600 hover:underline'>San Francisco, CA</div>

@@ -56,6 +56,14 @@ width: 0px;
 
 @media screen and (min-width: 1024px) {
     .show_video{
+        width: 280px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1280px) {
+    .show_video{
         width: 350px;
     }
     

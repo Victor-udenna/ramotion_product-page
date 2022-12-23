@@ -4,8 +4,10 @@ import { FaqComponent } from "../../components";
  const Faq = () => {
   return (
 <Fragment>
-<div className=''>
+<div className='px-10 lg:px-20 xl:px-32'>
 <div className='text-4xl font-bold py-20'>FAQ on web design services</div>
+
+
 <FaqComponent
 faqtitle={'How does your web design firm process look like?'}
 faqcontent={<div>
@@ -60,7 +62,6 @@ faqcontent={<div>
   <div className='py-4'>Our SMB and Enterprise clients typically hire us on Time & Materials models when our experts extend their in-house teams with our design and development capabilities. This approach allows us to be flexible with any changes and start fast.</div>
   <div className='py-4'>All our proposals and offers are based on our hourly rates, even though we work with a fixed budget most of the time.</div>
 </div>}/>
-</div>
 <FaqComponent
 faqtitle={'Who are your website design agency target customers?'}
 faqcontent={<div>
@@ -81,6 +82,7 @@ faqcontent={<div>
    <div className='py-4'>Our team is intentionally small and slim. For more than ten years, we have worked with tech companies with unique technology leverage</div>
    <div className='py-4'>In addition to designing and developing websites, we act as a UI/UX design company, branding agency, app designers, web app development agency, and design systems studio. It allows us to provide much more valuable and complete results.</div>
 </div>}/>
+</div>
 </Fragment>
 
   )
