@@ -70,4 +70,16 @@ width: 0px;
 }
 
 
+.subnav.active{
+    display: block;
+}
+
+.subnav.inactive{
+    color: white;
+}
+
+
+.shownavbar.active .sidemenu {
+display: block;
+}
 

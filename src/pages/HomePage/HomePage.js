@@ -12,9 +12,11 @@ import { Footer } from "../../components";
    <Fragment>
 
    <div>
-   <NavBar/>
+ <div className='bg-primaryBg'>
+ <NavBar/>
      <Banner/>
      <Card/>
+ </div>
      <Features/>
      <Testimonial/>
      <Faq/>
