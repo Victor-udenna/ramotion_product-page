@@ -9,9 +9,10 @@ const NavBar = () => {
   const [scroll, setScroll] = useState(false);
   const [open, setopen] = useState(false); 
   const [showsubnav, setshowsubnav] = useState(false);
+  const [dropdown, setdropdown] = useState(false);
   return (
     <Fragment>
-<div className="bg-primaryBg Nab_bar">
+<div className="bg-primaryBg Nav_bar">
 <div className="bg-primaryBg flex justify-between items-center px-10 lg:px-20  xl:px-32 py-8 sticky top-0">
         <div>
           <svg height="24" width="15" fill="white">
@@ -63,8 +64,7 @@ const NavBar = () => {
 
 </div>
 
-<div className={`sidemenu text-white h-screen fix top-0 bg-black px-5 hidden ${open ? "active" : "inactive"}`}>
-  {/*  */}
+<div className={`sidemenu text-white h-screen fixed top-0 w-[100%] bg-black px-5 hidden z-20 ${open ? "active" : "inactive"}`}>
 <div className="flex items-center justify-end p-5 text-lg"
 onClick={()=>{
   setopen(!open)
@@ -76,12 +76,15 @@ onClick={()=>{
 
 
 <div className="text-4xl">
-<div className="flex items-center">
+<div className="flex items-center mb-4"
+onClick={()=>{
+  setdropdown(!dropdown)
+}}>
 <div className="font-bold">Services </div>
 <span className="mt-3 px-5"><AiFillCaretDown size={15}/></span>
 </div>
 
-<ul className="text-lg leading-10">
+<ul className={`text-lg leading-9 hidden drop_down  ${dropdown ? "active" : "inactive"}`}>
 <li>Branding</li>
 <li>Branding for startups</li>
 <li>Web design</li>
@@ -93,10 +96,10 @@ onClick={()=>{
 <li>Design system</li>
 </ul>
 
-<div className="font-bold mb-3">Work</div>
-<div className="font-bold mb-3">About</div>
-<div className="font-bold mb-3">Blog</div>
-<div className="font-bold mb-3">Contact</div>
+<div className="font-bold mb-4">Work</div>
+<div className="font-bold mb-4">About</div>
+<div className="font-bold mb-4">Blog</div>
+<div className="font-bold mb-4">Contact</div>
 </div>
 
 

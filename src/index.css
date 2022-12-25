@@ -79,7 +79,12 @@ width: 0px;
 }
 
 
-.shownavbar.active .sidemenu {
+.sidemenu.active  {
 display: block;
+}
+
+
+.drop_down.active{
+    display: block;
 }
 
