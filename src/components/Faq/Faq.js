@@ -4,7 +4,7 @@ import { FaqComponent } from "../../components";
  const Faq = () => {
   return (
 <Fragment>
-<div className='px-10 lg:px-20 xl:px-32'>
+<div className='px-10 lg:px-20'>
 <div className='text-4xl font-bold py-20'>FAQ on web design services</div>
 
 

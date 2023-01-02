@@ -14,7 +14,7 @@ import React, {Fragment} from 'react';
       <div className='px-4'>
         <div className='text-black text-lg'>{username}</div>
        <div className='flex items-center'>
-       <div className='text-grey text-slate-400 text-lg'>{userrole}</div>
+       <div className='text-grey text-slate-400 text-md'>{userrole}</div>
         <div className=' underline text-slate-400 px-1 hover:text-blue-400 cursor-pointer'>{link}</div>
        </div>
       </div>

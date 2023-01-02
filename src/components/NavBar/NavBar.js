@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <Fragment>
 <div className="bg-primaryBg Nav_bar">
-<div className="bg-primaryBg flex justify-between items-center px-10 lg:px-20  xl:px-32 py-8 sticky top-0">
+<div className="bg-primaryBg flex justify-between items-center px-10 lg:px-20  py-8 sticky top-0">
         <div>
           <svg height="24" width="15" fill="white">
             <path

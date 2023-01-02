@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Fragment } from 'react';
 import {VideoCard} from '../../components';
 // media (images and videos)
@@ -22,7 +22,7 @@ import {BsArrowUpRight} from 'react-icons/bs';
 // import {VideocardData} from '../../data';
 
 const Card = () => {
-
+  const [color, setcolor] = useState(false);
   return (
    
     <Fragment>
@@ -41,7 +41,7 @@ const Card = () => {
        })}
        </div> */}
 
-       <div className='bg-primaryBg px-10 lg:px-20 xl:px-32 grid gird-cols-12 md:grid-cols-3'>
+       <div className='bg-primaryBg px-10 lg:px-20  grid gird-cols-12 md:grid-cols-3  gap-10'>
         <VideoCard
         cardImage={image1}
         cardVideo={video1}
@@ -52,18 +52,53 @@ const Card = () => {
         cardVideo={video2}
         cardTitle="Coinread"
         cardDescription="Branding, web app design and development for a product that helps to find crypto market information"/>
-               <VideoCard
+
+               {/* <VideoCard
         cardImage={image3}
         cardVideo={video3}
         cardTitle="Mozilla Labs"
         cardDescription="Designing a website for innovative projects by Mozilla"
+        arrow={<BsArrowUpRight className='arrow_icon'/>}/> */}
+
+
+
+
+
+
+    <VideoCard
+        cardImage={image3}
+        cardVideo={video3}
+        cardTitle="Mozilla Labs"
+        cardDescription="Designing a website for innovative projects by Mozilla "
         arrow={<BsArrowUpRight className='arrow_icon'/>}/>
-       <VideoCard
-        cardImage={image4}
-        cardVideo={image4}
-        cardTitle="Clause"
-        cardDescription="Web design for a company that connects contracts post-signature to APIs"
-        arrow={<BsArrowUpRight className='arrow_icon'/>}/>
+
+
+<div  className="card w-[300px] md:w-[210px] lg:w-[280px] xl:w-[350px] my-10" onMouseEnter={()=> {
+      setcolor(!color)
+    }} 
+    
+    onMouseLeave={()=>{
+      setcolor(!color)
+    }}
+    >
+    <div className={` showcolor card ${color ? "active": "inactive"}`}>
+        <div className="">
+          <div className="">
+          <img src={image4} alt="card_img" className="rounded-md" />
+          </div>
+        </div>
+
+        <div className="text-white">
+    <h1 className="flex items-center">      <div className="font-bold py-3 text-3xl lg:text-4xl title">Clause</div> <div className="inline px-2 arrow_icon  w-10"><BsArrowUpRight/> </div></h1>
+          <p className="description text-lg text-[#ffffff8f]">
+          Web design for a company that connects contracts post-signature to APIs 
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
                <VideoCard
         cardImage={image5}
         cardVideo={video5}

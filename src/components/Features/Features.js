@@ -4,7 +4,7 @@ import Brands from '../Brands/Brands';
  const Features = () => {
   return (
 <Fragment>
-<div className='bg-white px-10 lg:px-20 xl:px-32 py-20'>
+<div className='bg-white px-10 lg:px-20 py-20'>
 <div>
 <div className='py-5 lg:py-10'>
 <div className='text-4xl font-bold py-5'>Marketing website design approach</div>

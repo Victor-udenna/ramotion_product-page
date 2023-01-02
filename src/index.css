@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .show_video{
-    width: 320px;
+    width: 300px;
 }
 
 .show_video.active .card_video{
@@ -11,14 +11,11 @@ display: block;
 }
 
 .arrow_icon{
-    /* color: red; */
     font-weight: 700;
 }
 
 
 .show_video.active .card_img{
-/* display: hidden; */
-/* opacity: 0; */
 width: 0px;
 }
 
@@ -42,6 +39,14 @@ width: 0px;
 }
 
 .showcolor.active .aside_text{
+    color: #2f77eb;
+}
+
+.showcolor.active.card{
+    background-color: #141414;
+}
+
+.showcolor.active .title, .showcolor.active .arrow_icon{
     color: #2f77eb;
 }
 

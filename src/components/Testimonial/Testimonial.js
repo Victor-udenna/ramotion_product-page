@@ -8,7 +8,7 @@ import userimg4 from "../../assets/images/ratic.jpg";
 export const Testimonial = () => {
   return (
   <Fragment>
-<div className='px-10 lg:px-20 xl:px-32'>
+<div className='px-10 lg:px-20'>
 <div className=' font-bold text-6xl text-white'>Testimonial</div>
  <div className=''>
  <TestimonialComponent

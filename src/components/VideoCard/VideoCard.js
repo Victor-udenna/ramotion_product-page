@@ -13,7 +13,7 @@ const VideoCard = ({cardImage, cardVideo, cardTitle, cardDescription, arrow}) =>
   
   return (
     <Fragment>
-    <div  className=" w-[320px] md:w-[210px] lg:w-[280px] xl:w-[350px] my-10" onMouseEnter={()=> {
+    <div  className=" w-[300px] md:w-[210px] lg:w-[280px] my-10" onMouseEnter={()=> {
       setplayVideo(!playVideo)
     }} 
     
